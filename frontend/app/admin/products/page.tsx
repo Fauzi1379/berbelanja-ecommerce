@@ -835,6 +835,7 @@ export default function AdminProductsPage() {
                       <div className="flex items-center gap-4">
                         <div className="relative group/img overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-50 w-14 h-14 flex-shrink-0">
                           <img
+                            loading="lazy"
                             src={`${BASE_URL}/storage/${product.thumbnail}`}
                             alt={product.name}
                             className="w-full h-full object-cover transition duration-300 group-hover/img:scale-105"
@@ -1215,6 +1216,7 @@ export default function AdminProductsPage() {
 
                     <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-2xl overflow-hidden border border-zinc-200 bg-zinc-50">
                       <img
+                        loading="lazy"
                         src={previewImage}
                         alt="Preview"
                         className="w-full h-full object-cover"
@@ -1427,6 +1429,7 @@ export default function AdminProductsPage() {
                           className="relative rounded-2xl overflow-hidden border border-zinc-200 bg-zinc-50 aspect-square"
                         >
                           <img
+                            loading="lazy"
                             src={img}
                             alt={`Gallery ${index}`}
                             className="w-full h-full object-cover"
